@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size:62.5%;
+}
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: 'Manrope', sans-serif;
+}
+nav {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 1px 8px rgb(75, 75, 75);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-nav-menu {
+  height: 10rem;
+}
+@media (min-width: 800px) {
+  nav {
+    padding: 1rem;
+  }
+  .nav-main {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    height: auto;
+  }
+
+}
+ul {
+  list-style-type: none;
+  line-height: 2rem;
+}
+ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 100;
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+ul li a:hover {
+  color: rgb(204, 204, 204);
+}
+.fa-bars {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  color: rgb(10, 10, 10);
+  transition: color 0.3s ease;
+}
+.fa-bars:hover {
+  color: rgb(204, 204, 204);
+}
+
+#hello {
+  background-color: rgb(10, 10, 10);
+  color: whitesmoke;
+  height:100%;
+}
+#h-wrapper {
+  padding-left: 20%;
+  z-index: -2;
+  margin: 0;
+}
+#zumrud-div {
+  mix-blend-mode: difference;
+  z-index: 2;
+  margin-top: -20%;
+  margin-right: 0;
+  padding-right: 4%;
+}
+#hello-tag,
+#zumrud-tag {
+  font-size: 2rem;
+  overflow: hidden;
+  color: whitesmoke;
+  padding: 1rem;
+}
+@media (min-width: 400px){
+    #hello-tag,
+    #zumrud-tag {
+      font-size: 8rem;
+      padding: 2rem;
+    }
+}
+@media (min-width: 1100px){
+    #hello-tag,
+    #zumrud-tag {
+      font-size: 10rem;
+    }
+}
+#hello-tag {
+  text-align: left;
+}
+#zumrud-tag {
+  text-align: right;
+}
+#img-container {
+  position: relative;
+  top: -5.6rem;
+  display: flex;
+  justify-content: center;
+}
+#img-div {
+  background-image: url("./profil.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 48rem;
+  height: 64rem;
+  filter: grayscale(100%);
+  box-shadow: 0 0 0.8rem 0.8rem rgb(10, 10, 10) inset;
+}
+
+#projects-title {
+font-size: 5rem;
+margin: 4rem;
+}
+
+/* #divdiv {
+  background-color: rgb(10, 10, 10);
+  background-image: url("profil.gif");
+  background-position: 0 54%;
+}
+#divdiv div {
+  background-color: whitesmoke;
+  mix-blend-mode: difference;
+}
+#hh {
+  padding-left: 4%;
+  text-align: left;
+  color: rgb(10, 10, 10);
+  font-size: 80px;
+} */
