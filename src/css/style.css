@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;700&display=swap');
+:root
+{
+ --white: #f8f9fa;
+ --light1: #e9ecef;
+ --light2: #dee2e6;
+ --light3: #ced4da;
+ --light4: #adb5bd;
+ --dark1: #6c757d;
+ --dark2: #495057;
+ --dark3: #343a40;
+ --black: #212529;
+}
+
+
+
 
 * {
   margin: 0;
@@ -8,11 +23,11 @@ html {
   font-size:62.5%;
 }
 body {
-  background-color: rgb(220, 220, 220);
+  background-color: var(--light2);
   font-family: 'Manrope', sans-serif;
 }
 nav {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--light4);
   box-shadow: 0 1px 8px rgb(75, 75, 75);
 }
 .nav-header {
@@ -62,26 +77,26 @@ ul li a {
   font-weight: 100;
   font-size: 2.2rem;
   text-decoration: none;
-  color: rgb(10, 10, 10);
+  color: var(--black);
 }
 ul li a:hover {
-  color: rgb(204, 204, 204);
+  color: var(--white);
 }
 .fa-bars {
   position: fixed;
   top: 2rem;
   right: 2rem;
   font-size: 2.5rem;
-  color: rgb(10, 10, 10);
+  color: var(--black);
   transition: color 0.3s ease;
 }
 .fa-bars:hover {
-  color: rgb(204, 204, 204);
+  color: var(--white);
 }
 
 #hello {
-  background-color: rgb(10, 10, 10);
-  color: whitesmoke;
+  background-color: var(--black);
+  color: var(--light4);
   height:100%;
 }
 #h-wrapper {
@@ -100,7 +115,7 @@ ul li a:hover {
 #zumrud-tag {
   font-size: 2rem;
   overflow: hidden;
-  color: whitesmoke;
+  color: var(--light2);
   padding: 1rem;
 }
 @media (min-width: 400px){
@@ -136,12 +151,13 @@ ul li a:hover {
   width: 48rem;
   height: 64rem;
   filter: grayscale(100%);
-  box-shadow: 0 0 0.8rem 0.8rem rgb(10, 10, 10) inset;
+  box-shadow: 0 0 .8rem .8rem var(--black) inset;
 }
 
 #projects-title {
 font-size: 5rem;
 margin: 4rem;
+color: var(--black);
 }
 
 /* #divdiv {
